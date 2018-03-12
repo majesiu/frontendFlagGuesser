@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lobby</title>
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <div id="page-wrapper">
+
+    <div id="status">Connected to: <a id=stat></a></div>
+
+    <ul id="messages"></ul>
+
+    <form id="message-form" action="#" method="post">
+      <textarea id="message" placeholder="nazwa pokoju" required></textarea>
+      <button type="submit">Zmień pokój</button>
+    </form>
+  </div>
+  <br>
+
+  <div id="paint_space" style="display: none;">
+    <p>Points: <a id="points"></a></p>
+    <form id="answer-form" action="#" method="post">
+      <textarea id="answer" placeholder="odpowiedź" required></textarea>
+      <button type="submit">Wyślij odpowiedź</button>
+    </form>
+    <br>
+  </div>
+  <!-- <div id="countries" style="display: none;"> -->
+  <div id="France" style="display: none;">
+    <canvas id="fr" width="300" height="200"></canvas>
+    <script type="text/javascript" >
+    var canvasId = 'fr',
+    canvas = document.getElementById(canvasId),
+    ctx = canvas.getContext('2d'),
+    grd;
+
+    // Create gradient
+    grd = ctx.createLinearGradient(0.000, 100.000, 300.000, 100.000);
+    // Add colors
+    grd.addColorStop(0.000, 'rgba(0, 85, 164, 1.000)');
+    grd.addColorStop(0.330, 'rgba(0, 85, 164, 1.000)');
+    grd.addColorStop(0.331, 'rgba(255, 255, 255, 1.000)');
+    grd.addColorStop(0.660, 'rgba(255, 255, 255, 1.000)');
+    grd.addColorStop(0.661, 'rgba(250, 60, 50, 1.000)');
+    grd.addColorStop(1.000, 'rgba(250, 60, 50, 1.000)');
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, 300.000, 200.000);
+    </script>
+  </div>
+  <div id="Italy" style="display: none;">
+    <canvas id="ita" width="300" height="200"></canvas>
+    <script type="text/javascript">
+    var canvasId = 'ita',
+    canvas = document.getElementById(canvasId),
+    ctx = canvas.getContext('2d'),
+    grd;
+
+    // Create gradient
+    grd = ctx.createLinearGradient(0.000, 100.000, 300.000, 100.000);
+
+    // Add colors
+    grd.addColorStop(0.000, 'rgba(0, 146, 70, 1.000)');
+    grd.addColorStop(0.330, 'rgba(0, 146, 70, 1.000)');
+    grd.addColorStop(0.331, 'rgba(241, 242, 241, 1.000)');
+    grd.addColorStop(0.660, 'rgba(241, 242, 241, 1.000)');
+    grd.addColorStop(0.661, 'rgba(206, 43, 55, 1.000)');
+    grd.addColorStop(1.000, 'rgba(206, 43, 55, 1.000)');
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, 300.000, 200.000);
+    </script>
+  </div>
+  <div id="Colombia" style="display: none;">
+    <canvas id="col" width="300" height="200"></canvas>
+    <script type="text/javascript">
+    var canvasId = 'col',
+    canvas = document.getElementById(canvasId),
+    ctx = canvas.getContext('2d'),
+    grd;
+
+    // Create gradient
+    grd = ctx.createLinearGradient(150.000, 0.000, 150.000, 200.000);
+
+    // Add colors
+    grd.addColorStop(0.000, 'rgba(252, 209, 22, 1.000)');
+    grd.addColorStop(0.500, 'rgba(252, 209, 22, 1.000)');
+    grd.addColorStop(0.501, 'rgba(0, 56, 147, 1.000)');
+    grd.addColorStop(0.750, 'rgba(0, 56, 147, 1.000)');
+    grd.addColorStop(0.751, 'rgba(206, 17, 38, 1.000)');
+    grd.addColorStop(1.000, 'rgba(206, 17, 38, 1.000)');
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, 300.000, 200.000);
+    </script>
+  </div>
+  <div id="Germany" style="display: none;">
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Genau</title>
+    </head>
+    <body>
+      <canvas id="ger" width="300" height="180"></canvas>
+      <script type="text/javascript">
+      var canvasId = 'ger',
+      canvas = document.getElementById(canvasId),
+      ctx = canvas.getContext('2d'),
+      grd;
+
+      // Create gradient
+      grd = ctx.createLinearGradient(150.000, 0.000, 150.000, 180.000);
+
+      // Add colors
+      grd.addColorStop(0.000, 'rgba(0, 0, 0, 1.000)');
+      grd.addColorStop(0.330, 'rgba(0, 0, 0, 1.000)');
+      grd.addColorStop(0.331, 'rgba(255, 0, 0, 1.000)');
+      grd.addColorStop(0.690, 'rgba(255, 0, 0, 1.000)');
+      grd.addColorStop(0.691, 'rgba(255, 204, 0, 1.000)');
+      grd.addColorStop(1.000, 'rgba(255, 204, 0, 1.000)');
+
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(0, 0, 300.000, 180.000);
+      </script>
+    </body>
+    </html>
+  </div>
+  <div id="Russia" style="display: none;">
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Привет</title>
+    </head>
+    <body>
+      <canvas id="rus" width="300" height="200"></canvas>
+      <script type="text/javascript">
+      var canvasId = 'rus',
+      canvas = document.getElementById(canvasId),
+      ctx = canvas.getContext('2d'),
+      grd;
+
+      // Create gradient
+      grd = ctx.createLinearGradient(150.000, 0.000, 150.000, 200.000);
+
+      // Add colors
+      grd.addColorStop(0.000, 'rgba(255, 255, 255, 1.000)');
+      grd.addColorStop(0.330, 'rgba(255, 255, 255, 1.000)');
+      grd.addColorStop(0.331, 'rgba(0, 0, 255, 1.000)');
+      grd.addColorStop(0.690, 'rgba(0, 0, 255, 1.000)');
+      grd.addColorStop(0.691, 'rgba(255, 0, 0, 1.000)');
+      grd.addColorStop(1.000, 'rgba(255, 0, 0, 1.000)');
+
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(0, 0, 300.000, 200.000);
+      </script>
+    </body>
+    </html>
+  </div>
+  <div id="Poland" style="display: none;">
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Привет (modified)</title>
+    </head>
+    <body>
+      <canvas id="pol" width="300" height="200"></canvas>
+      <script type="text/javascript">
+      var canvasId = 'pol',
+      canvas = document.getElementById(canvasId),
+      ctx = canvas.getContext('2d'),
+      grd;
+
+      // Create gradient
+      grd = ctx.createLinearGradient(150.000, 0.000, 150.000, 200.000);
+
+      // Add colors
+      grd.addColorStop(0.000, 'rgba(255, 255, 255, 1.000)');
+      grd.addColorStop(0.500, 'rgba(255, 255, 255, 1.000)');
+      grd.addColorStop(0.500, 'rgba(255, 0, 0, 1.000)');
+      grd.addColorStop(1.000, 'rgba(255, 0, 0, 1.000)');
+
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(0, 0, 300.000, 200.000);
+      </script>
+    </body>
+    </html>
+  </div>
+  <div id="Nope" style="display: none;">
+
+  </div>
+  <!-- </div> -->
+
+  <script src="websocks.js"></script>
+</body>
+</html>
